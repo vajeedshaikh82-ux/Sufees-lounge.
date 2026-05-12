@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Online - Sufees Lounge Cafe</title>
+    <meta name="description" content="Order online from Sufees Lounge cafe near MGM Hospital. Fast WhatsApp ordering for pizza, burgers, sandwiches and more.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">SUFEES LOUNGE</a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html#home" class="nav-link" data-scroll="home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="menu.html" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="order.html" class="nav-link active">Order</a>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery-contact.html" class="nav-link">Gallery</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Order Hero -->
+    <section class="order-hero">
+        <div class="container">
+            <h1 class="order-title">Order Online</h1>
+            <p class="order-subtitle">Fast WhatsApp Ordering</p>
+        </div>
+    </section>
+
+    <!-- Order Form -->
+    <section class="order-form-section">
+        <div class="container">
+            <div class="order-form-container">
+                <form id="orderForm" class="order-form">
+                    <div class="form-group">
+                        <label>Customer Name *</label>
+                        <input type="text" id="customerName" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number *</label>
+                        <input type="tel" id="phoneNumber" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Item Name *</label>
+                        <input type="text" id="itemName" placeholder="e.g. Chicken Burger, Cold Coffee" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Quantity *</label>
+                        <input type="number" id="quantity" min="1" value="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Pickup / Delivery *</label>
+                        <select id="orderType" required>
+                            <option value="">Select</option>
+                            <option value="Pickup">Pickup</option>
+                            <option value="Delivery">Delivery</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Address (for Delivery)</label>
+                        <textarea id="address" placeholder="Your complete address"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Special Instructions</label>
+                        <textarea id="instructions" placeholder="Extra cheese, less spicy, etc."></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary btn-large">Send Order on WhatsApp</button>
+                        <a href="tel:+919637997772" class="btn btn-accent btn-large">Call to Order</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Order Items -->
+    <section class="popular-order">
+        <div class="container">
+            <h2>Popular Order Items</h2>
+            <div class="popular-grid">
+                <div class="popular-card">
+                    <img src="images/chicken-burger.jpg" alt="Chicken Burger">
+                    <h3>Chicken Burger</h3>
+                    <span>110</span>
+                </div>
+                <div class="popular-card">
+                    <img src="images/pizza.jpg" alt="Pizza">
+                    <h3>Chicken Tikka Pizza</h3>
+                    <span>140+</span>
+                </div>
+                <div class="popular-card">
+                    <img src="images/cold-coffee.jpg" alt="Cold Coffee">
+                    <h3>Cold Coffee</h3>
+                    <span>70</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>SUFEES LOUNGE</h3>
+                </div>
+                <div class="footer-contact">
+                    <p><strong> <a href="tel:+919637997772">+91 96379 97772</a></strong></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p id="footerYear">&copy; Sufees Lounge. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop"></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
